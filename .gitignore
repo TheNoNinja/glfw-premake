@@ -101,3 +101,12 @@ tests/triangle-vulkan
 tests/window
 tests/windows
 
+#Custom ignores
+*.tlog
+*.log
+*.obj
+*.idb
+*.lastbuildstate
+*.recipe
+*.lib
+*.pdb
