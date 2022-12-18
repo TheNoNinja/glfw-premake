@@ -1,7 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
-	staticruntime "off"
+	staticruntime "on"
 
 	targetdir ("bin/" .. outputdirectory .. "/%{prj.name}")
 	objdir ("bin-obj/" .. outputdirectory .. "/%{prj.name}")
@@ -86,7 +86,7 @@ project "GLFW"
 		runtime "Release"
 		optimize "on"
 
-	filter "configurations:Dist"
+	filter "configurations:Distribution"
 		runtime "Release"
 		optimize "on"
         symbols "off"
